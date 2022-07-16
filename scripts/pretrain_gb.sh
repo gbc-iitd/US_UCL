@@ -1,0 +1,19 @@
+python train_ucl.py \
+        --moco-random-video-frame-as-pos --multiprocessing-distributed --soft-nn \
+        --cycle-back-cls --mlp --aug-plus --cycle-back-candidates \
+        --cycle-back-cls-video-as-pos --sep-head \
+        --pretrained-models --exp_name="UCL_GBC" \
+        --learning-rate=0.003 \
+        --cos \
+        --dist-url="tcp://localhost:10001" \
+        --moco-t=0.07 \
+        --soft-nn-t=0.07 \
+        --soft-nn-topk-support \
+        --negatives \
+        --intranegs-only-two \
+        --soft-nn-loss-weight=0.1 \
+        --cross-neg-topk-mining \
+        --cross-neg-topk-support-size=4 \
+        --anchor-reverse-cross \
+        --single-loss-intra-inter --single-loss-ncap-support-size=4 --num-negatives=3 \
+        --qcap-include --cosine-curriculum ../../../scratch/Data_64 
