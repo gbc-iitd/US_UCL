@@ -1,6 +1,6 @@
 ## Unsupervised Contrastive Learning of Image Representations from Ultrasound Videos with Hard Negative Mining
 
-This is the official implementation of the UCL-method based on Hard Negative Mining, introduced in our paper. 
+This is the official implementation of the UCL-method based on Hard Negative Mining, introduced in our paper [https://arxiv.org/abs/2207.13148](https://arxiv.org/abs/2207.13148). 
 
 ### Installation
 
@@ -17,12 +17,12 @@ We ran some of our baselines using [lightly](https://github.com/lightly-ai/light
 
 We provide the models pretrained on for 50 epochs and the fine-tuned classifier. 
 
-| Method        | Backbone | Specificity | Sensitivity | Pre-trained model | Fine-tuned model |
-|---------------|:--------:|:-----------:|:-----------:|:-----------------:|:----------------:|
-| UCL (Ours)    | Resnet18 |             |             | [pretrain ckpt](https://add-pretrain)  |  [classifier ckpt](https://add-finetune)  |
-| UCL (Ours)    | Resnet50 |             |             | [pretrain ckpt](https://add-pretrain)  |  [classifier ckpt](https://add-finetune)  |
-| [USCL](https://)    | Resnet18 |             |             | [pretrain ckpt](https://add-pretrain)  |  [classifier ckpt](https://add-finetune)  |
-| [USCL](https://)    | Resnet50 |             |             | [pretrain ckpt](https://add-pretrain)  |  [classifier ckpt](https://add-finetune)  |
+| Method        | Backbone | Pre-trained model | Fine-tuned model |
+|---------------|:--------:|:-----------------:|:----------------:|
+| UCL (Ours)    | Resnet18 | [pretrain ckpt](https://add-pretrain)  |  [classifier ckpt](https://add-finetune)  |
+| UCL (Ours)    | Resnet50 | [pretrain ckpt](https://add-pretrain)  |  [classifier ckpt](https://add-finetune)  |
+| [USCL](https://)    | Resnet18 | [pretrain ckpt](https://add-pretrain)  |  [classifier ckpt](https://add-finetune)  |
+| [USCL](https://)    | Resnet50 | [pretrain ckpt](https://add-pretrain)  |  [classifier ckpt](https://add-finetune)  |
 
 
 ### Run on Custom Dataset
