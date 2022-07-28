@@ -17,12 +17,12 @@ We ran some of our baselines using [lightly](https://github.com/lightly-ai/light
 
 We provide the models pretrained on for 50 epochs and the fine-tuned classifier. 
 
-| Method        | Backbone | Pre-trained model | Fine-tuned model |
-|---------------|:--------:|:-----------------:|:----------------:|
-| UCL (Ours)    | Resnet18 | [pretrain ckpt](https://add-pretrain)  |  [classifier ckpt](https://add-finetune)  |
-| UCL (Ours)    | Resnet50 | [pretrain ckpt](https://add-pretrain)  |  [classifier ckpt](https://add-finetune)  |
-| [USCL](https://)    | Resnet18 | [pretrain ckpt](https://add-pretrain)  |  [classifier ckpt](https://add-finetune)  |
-| [USCL](https://)    | Resnet50 | [pretrain ckpt](https://add-pretrain)  |  [classifier ckpt](https://add-finetune)  |
+| Method        | Downstream Task | Backbone | Pre-trained model | Fine-tuned model |
+|---------------|:--------:|:--------:|:-----------------:|:----------------:|
+| UCL   | Gallbladder Cancer Detection | Resnet18 | [pretrain ckpt](https://add-pretrain)  |  [classifier ckpt](https://add-finetune)  |
+| UCL   | COVID-19 Detection         | Resnet18 | [pretrain ckpt](https://add-pretrain)  |  [classifier ckpt](https://add-finetune)  |
+| UCL   | Gallbladder Cancer Detection | Resnet50 | [pretrain ckpt](https://add-pretrain)  |  [classifier ckpt](https://add-finetune)  |
+| UCL   | COVID-19 Detection         | Resnet50 | [pretrain ckpt](https://add-pretrain)  |  [classifier ckpt](https://add-finetune)  |
 
 
 ### Run on Custom Dataset
