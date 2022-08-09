@@ -64,7 +64,29 @@ bash scripts/finetuning_gb.sh <split_no> <model_path> <checkpoint_no> <gpu_id>
 ```
 bash scripts/evaluate_gb.sh <split_no> <model_path> <checkpoint_no> <gpu_id>
 ```
+### Experiments on POCUS and Butterfly Dataset
+
+#### Getting Butterfly and POCUS Dataset
+Please follow instructions on [USCL Repo](https://github.com/983632847/USCL) to get these datasets.
+
+#### Unsupervised Contrastive Pretrain
+1. After Downloading the butterfly dataset make sure the frames in each video follow the naming convention as described in Data Preparation section of this README.
+2. Modify the num_var variable in Line 165 of [Main Script](train_ucl.py) to 22.
+3. Run the command:
+``` 
+bash scripts/pretrain_ucl_butterfly.sh
+```
+
+#### Fine-Tuning and Evaluating Classifier
+For this we have followed the evaluation mechanism as proposed in [USCL](https://link.springer.com/chapter/10.1007/978-3-030-87237-3_60), the script modified for our proposed model can be found [here](scripts/eval_ucl_pocus.py).     
+
+Steps to run this script:    
+1. Setup environment and code from [USCL repo](https://github.com/983632847/USCL).
+2. Place [Our Evaluation Script](scripts/eval_ucl_pocus.py) in eval_pretrained_model directory of USCL repo.
+3. Run the command:
+```
+python eval_ucl_pocus.py --path <model_path> --gpu <gpu_id>
+```
 
 ## Acknowledgements
-
 The codebase is based on [CycleContrast](https://github.com/happywu/CycleContrast) and [MoCo](https://github.com/facebookresearch/moco). 
