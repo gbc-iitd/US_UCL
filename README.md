@@ -12,8 +12,12 @@ pip install -r requirements.txt
 
 We ran some of our baselines using [lightly](https://github.com/lightly-ai/lightly).
 
-### Dataset
+### Our Datasets
+#### Video Dataset
 To get our Video Dataset(GBUSV) follow the instructions [here](https://gbc-iitd.github.io/data/gbusv).
+
+#### Image Dataset
+To get our Image Dataset(GBCU) follow the instructions [here](https://gbc-iitd.github.io/data/gbcu).
 
 ### Model Zoo 
 
