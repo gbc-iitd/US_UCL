@@ -11,7 +11,13 @@ pip install -r requirements.txt
 ```
 
 We ran some of our baselines using [lightly](https://github.com/lightly-ai/lightly).
-### Dataset
+
+### Our Datasets
+#### Video Dataset
+To get our Video Dataset(GBUSV) follow the instructions [here](https://gbc-iitd.github.io/data/gbusv).
+
+#### Image Dataset
+To get our Image Dataset(GBCU) follow the instructions [here](https://gbc-iitd.github.io/data/gbcu).
 
 ### Model Zoo 
 
@@ -50,9 +56,9 @@ In the pre-training script some flags which can be experimented if the default c
 3. single-loss-ncap-support-size: It decides the number of cross video negatives used to form cross video negative used in the loss function
 4. num-negatives: It selects ths number of intra video negatives to be used
 
-### Experiments on GB Dataset
+### Experiments on GB Datasets
 
-#### Unsupervised Contrastive Pretrain 
+#### Unsupervised Contrastive Pretrain
 ```
 bash scripts/pretrain_gb.sh
 ```
