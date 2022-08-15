@@ -24,3 +24,4 @@ finetune_gb_CT.sh
 pretrain_ucl_gb.sh
 run_classifier.sh
 main_lincls.py
+scripts/finetune_test_gb.sh

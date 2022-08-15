@@ -10,23 +10,18 @@ Our code is tested on Python 3.7 and Pytorch 1.3.0, please install the environme
 pip install -r requirements.txt
 ```
 
-We ran some of our baselines using [lightly](https://github.com/lightly-ai/lightly).
-
 ### Our Datasets
-#### Video Dataset
-To get our Video Dataset(GBUSV) follow the instructions [here](https://gbc-iitd.github.io/data/gbusv).
-
-#### Image Dataset
-To get our Image Dataset(GBCU) follow the instructions [here](https://gbc-iitd.github.io/data/gbcu).
+1. Video Dataset: To get our Video Dataset(GBUSV) follow the instructions [here](https://gbc-iitd.github.io/data/gbusv).      
+2. Image Dataset: To get our Image Dataset(GBCU) follow the instructions [here](https://gbc-iitd.github.io/data/gbcu).
 
 ### Model Zoo 
 
 We provide the models pretrained on for 50 epochs and the fine-tuned classifier. 
 
-| Method        | Downstream Task | Backbone | Pre-trained model | Fine-tuned model |
+| Method        | Downstream Task | Backbone | Pre-trained model | 
 |---------------|:--------:|:--------:|:-----------------:|:----------------:|
-| UCL   | Gallbladder Cancer Detection | Resnet50 | [pretrain ckpt](https://add-pretrain)  |  [classifier ckpt](https://add-finetune)  |
-| UCL   | COVID-19 Detection         | Resnet50 | [pretrain ckpt](https://add-pretrain)  |  
+| UCL   | Gallbladder Cancer Detection | Resnet50 | [pretrain ckpt](https://drive.google.com/file/d/1nu4-WtuUj7VIV4vyKmoz9M0Tw2GXvS9P/view?usp=sharing)  | 
+| UCL   | COVID-19 Detection         | Resnet50 | [pretrain ckpt](https://drive.google.com/file/d/1giXcf52tD2zUmQuC_DXBXdCXXnS3xFIm/view?usp=sharing)  |  
 
 
 ### Run on Custom Dataset
