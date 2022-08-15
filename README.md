@@ -25,10 +25,8 @@ We provide the models pretrained on for 50 epochs and the fine-tuned classifier.
 
 | Method        | Downstream Task | Backbone | Pre-trained model | Fine-tuned model |
 |---------------|:--------:|:--------:|:-----------------:|:----------------:|
-| UCL   | Gallbladder Cancer Detection | Resnet18 | [pretrain ckpt](https://add-pretrain)  |  [classifier ckpt](https://add-finetune)  |
-| UCL   | COVID-19 Detection         | Resnet18 | [pretrain ckpt](https://add-pretrain)  |  [classifier ckpt](https://add-finetune)  |
 | UCL   | Gallbladder Cancer Detection | Resnet50 | [pretrain ckpt](https://add-pretrain)  |  [classifier ckpt](https://add-finetune)  |
-| UCL   | COVID-19 Detection         | Resnet50 | [pretrain ckpt](https://add-pretrain)  |  [classifier ckpt](https://add-finetune)  |
+| UCL   | COVID-19 Detection         | Resnet50 | [pretrain ckpt](https://add-pretrain)  |  
 
 
 ### Run on Custom Dataset
@@ -94,4 +92,4 @@ python eval_ucl_pocus.py --path <model_path> --gpu <gpu_id>
 ```
 
 ## Acknowledgements
-The codebase is based on [CycleContrast](https://github.com/happywu/CycleContrast) and [MoCo](https://github.com/facebookresearch/moco). 
+The codebase is based on [CycleContrast](https://github.com/happywu/CycleContrast) and [MoCo](https://github.com/facebookresearch/moco).
