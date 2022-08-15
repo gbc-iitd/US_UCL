@@ -14,6 +14,7 @@ python train_ucl.py \
         --soft-nn-loss-weight=0.1 \
         --cross-neg-topk-mining \
         --cross-neg-topk-support-size=4 \
+        --num-var=22 \
         --anchor-reverse-cross \
         --single-loss-intra-inter --single-loss-ncap-support-size=2 --num-negatives=3 \
         --qcap-include --cosine-curriculum ../../../scratch/Data_Butterfly 

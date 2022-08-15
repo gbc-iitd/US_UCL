@@ -43,7 +43,7 @@ Data_64
 |   |   ├──  ....
 ```
 
-#### Note on flags in pree-training script
+#### Note on flags in pre-training script
 In the pre-training script some flags which can be experimented if the default configuration doesn't give results:
 1. moco-t: It selects the temperature used while loss calculation
 2. soft-nn-t: It selects the temperature used to calculate cross video negative
@@ -71,8 +71,7 @@ Please follow instructions on [USCL Repo](https://github.com/983632847/USCL) to 
 
 #### Unsupervised Contrastive Pretrain
 1. After Downloading the butterfly dataset make sure the frames in each video follow the naming convention as described in Data Preparation section of this README.
-2. Modify the num_var variable in Line 165 of [Main Script](train_ucl.py) to 22.
-3. Run the command:
+2. Run the command:
 ``` 
 bash scripts/pretrain_ucl_butterfly.sh
 ```

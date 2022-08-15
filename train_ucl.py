@@ -153,6 +153,7 @@ parser.add_argument('--cosine-clipping',action='store_true')
 parser.add_argument('--mean-neighbors',action='store_true')
 parser.add_argument('--single-loss-ncap-support-size',default=4, type=int)
 parser.add_argument('--num-negatives',default=2, type=int)
+parser.add_argument('--num-var',default=32, type=int)
 parser.add_argument('--local_rank', type=int)
 
 def main():
@@ -162,7 +163,7 @@ def main():
         shutil.rmtree(os.path.join(args.save_dir,args.exp_name),ignore_errors=True)
     os.mkdir(os.path.join(args.save_dir,args.exp_name))
     #####################
-    num_var = 32
+    num_var = args.num_var
     args.batch_size = num_var
     #####################
     args.cycle_k = num_var
