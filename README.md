@@ -19,7 +19,7 @@ pip install -r requirements.txt
 We provide the models pretrained on for 50 epochs and the fine-tuned classifier. 
 
 | Method        | Downstream Task | Backbone | Pre-trained model | 
-|---------------|:--------:|:--------:|:-----------------:|:----------------:|
+|---------------|:--------:|:--------:|:-----------------:|
 | UCL   | Gallbladder Cancer Detection | Resnet50 | [pretrain ckpt](https://drive.google.com/file/d/1nu4-WtuUj7VIV4vyKmoz9M0Tw2GXvS9P/view?usp=sharing)  | 
 | UCL   | COVID-19 Detection         | Resnet50 | [pretrain ckpt](https://drive.google.com/file/d/1giXcf52tD2zUmQuC_DXBXdCXXnS3xFIm/view?usp=sharing)  |  
 
