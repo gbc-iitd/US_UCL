@@ -10,13 +10,15 @@ Our code is tested on Python 3.7 and Pytorch 1.3.0, please install the environme
 pip install -r requirements.txt
 ```
 
+Note: To run our code you'll need multiple GPUs this code is not designed to run on single GPU systems.    
+
 ### Our Datasets
 1. Video Dataset: To get our Video Dataset(GBUSV) follow the instructions [here](https://gbc-iitd.github.io/data/gbusv).      
 2. Image Dataset: To get our Image Dataset(GBCU) follow the instructions [here](https://gbc-iitd.github.io/data/gbcu).
 
 ### Model Zoo 
 
-We provide the models pretrained on for 50 epochs and the fine-tuned classifier. 
+We provide the models pretrained on Video Data for 50 epochs.
 
 | Method        | Downstream Task | Backbone | Pre-trained model | 
 |---------------|:--------:|:--------:|:-----------------:|
@@ -53,15 +55,15 @@ In the pre-training script some flags which can be experimented if the default c
 
 #### Unsupervised Contrastive Pretrain
 ```
-bash scripts/pretrain_gb.sh
+bash scripts/pretrain_gb.sh <Video_Data_path>
 ```
 #### Fine-tune for Downstream Classification
 ```
-bash scripts/finetuning_gb.sh <split_no> <model_path> <checkpoint_no> <gpu_id>
+bash scripts/finetuning_gb.sh <path_to_train_split_txt_file> <path_to_val_split_txt_file> <path_to_pretrained_model> <path_for_saving_finetuned_model> <gpu_id>
 ```
 #### Evaluate Classifier 
 ```
-bash scripts/evaluate_gb.sh <split_no> <model_path> <checkpoint_no> <gpu_id>
+bash scripts/evaluate_gb.sh <path_to_train_split_txt_file> <path_to_val_split_txt_file> <path_to_pretrained_model> <gpu_id>
 ```
 ### Experiments on POCUS and Butterfly Dataset
 
@@ -72,7 +74,7 @@ Please follow instructions on [USCL Repo](https://github.com/983632847/USCL) to 
 1. After Downloading the butterfly dataset make sure the frames in each video follow the naming convention as described in Data Preparation section of this README.
 2. Run the command:
 ``` 
-bash scripts/pretrain_ucl_butterfly.sh
+bash scripts/pretrain_ucl_butterfly.sh <path_to_butterfly_data>
 ```
 
 #### Fine-Tuning and Evaluating Classifier

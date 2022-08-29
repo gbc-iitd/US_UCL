@@ -155,6 +155,7 @@ parser.add_argument('--single-loss-ncap-support-size',default=4, type=int)
 parser.add_argument('--num-negatives',default=2, type=int)
 parser.add_argument('--num-var',default=32, type=int)
 parser.add_argument('--local_rank', type=int)
+parser.add_argument('--num-gpu',default=4, type=int)
 
 def main():
     args = parser.parse_args()
@@ -193,7 +194,7 @@ def main():
     args.distributed = args.world_size > 1 or args.multiprocessing_distributed
 
     ngpus_per_node = torch.cuda.device_count()
-    ngpus_per_node = 4
+    ngpus_per_node = args.num_gpu
     if args.multiprocessing_distributed:
         # Since we have ngpus_per_node processes per node, the total world_size
         # needs to be adjusted accordingly

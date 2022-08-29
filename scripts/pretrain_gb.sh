@@ -17,4 +17,4 @@ python train_ucl.py \
         --num-var=32 \
         --anchor-reverse-cross \
         --single-loss-intra-inter --single-loss-ncap-support-size=4 --num-negatives=3 \
-        --qcap-include --cosine-curriculum ../../../scratch/Data_64 
+        --qcap-include --cosine-curriculum $1 

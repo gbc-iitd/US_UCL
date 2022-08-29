@@ -1,15 +1,15 @@
 python lincls_bin.py \
 	-a resnet50 \
-	--train_list "data/cls_split/train_$1.txt" \
-	--val_list "data/cls_split/val_$1.txt" \
+	--train_list $1 \
+	--val_list $2 \
 	--world-size 1 \
 	--num_classes 3 \
 	--batch-size 64  \
-	--pretrained /home/somanshu/scratch/cyclecontrast/output/$2/checkpoint_00$3_$2.pth.tar \
-	--save-dir /home/somanshu/scratch/cyclecontrast/output/finetune_$2/$1 \
+	--pretrained $3 \
+	--save-dir $4 \
 	--fc_type 2 \
 	--lr 0.003 \
 	--cos_lr \
 	--wd 0.0005 \
 	--epochs 30 \
-	--gpu $4 \
+	--gpu $5 \

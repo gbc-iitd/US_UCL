@@ -1,11 +1,11 @@
 python lincls_bin.py \
 	-a resnet50 \
-	--train_list "data/cls_split/train_$1.txt" \
-	--val_list "data/cls_split/val_$1.txt" \
+	--train_list $1 \
+	--val_list $2 \
 	--world-size 1 \
 	--num_classes 3 \
 	--batch-size 64  \
-	--pretrained /home/somanshu/scratch/cyclecontrast/output/$2/$1/lincls_ep_$3.pth.tar \
+	--pretrained $3 \
 	--fc_type 2 \
 	--lr 0.003 \
 	--cos_lr \
