@@ -31,7 +31,7 @@ from dataloader import GbUsgDataSet
 
 from ucl.datasets import ImageNetVal
 
-#import neptune.new as neptune
+import neptune.new as neptune
 
 
 model_names = sorted(name for name in models.__dict__
