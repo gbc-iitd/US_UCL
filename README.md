@@ -20,10 +20,10 @@ Note: To run our code you'll need multiple GPUs this code is not designed to run
 
 We provide the models pretrained on Video Data for 50 epochs.
 
-| Method        | Downstream Task | Backbone | Pre-trained model | 
-|---------------|:--------:|:--------:|:-----------------:|
-| UCL   | Gallbladder Cancer Detection | Resnet50 | [pretrain ckpt](https://drive.google.com/file/d/1nu4-WtuUj7VIV4vyKmoz9M0Tw2GXvS9P/view?usp=sharing)  | 
-| UCL   | COVID-19 Detection         | Resnet50 | [pretrain ckpt](https://drive.google.com/file/d/1giXcf52tD2zUmQuC_DXBXdCXXnS3xFIm/view?usp=sharing)  |  
+| Method        | Downstream Task | Backbone | Pre-trained model | Fine-tuned model (on a single val split)
+|---------------|:--------:|:--------:|:-----------------:|:-------------------------:|
+| UCL   | Gallbladder Cancer Detection | Resnet50 | [pretrain ckpt](https://drive.google.com/file/d/1nu4-WtuUj7VIV4vyKmoz9M0Tw2GXvS9P/view?usp=sharing)  | [finetune ckpt](https://drive.google.com/file/d/1H9Abh9YvKkIUe38opbAPWhDEt51XJxTd/view) | 
+| UCL   | COVID-19 Detection         | Resnet50 | [pretrain ckpt](https://drive.google.com/file/d/1giXcf52tD2zUmQuC_DXBXdCXXnS3xFIm/view?usp=sharing)  |  - |
 
 
 ### Run on Custom Dataset
